@@ -1,0 +1,54 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+  margin-bottom: 100px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .WrapperCard {
+    // flex: 1;
+    height: 340px;
+
+    max-width: 670px;
+    position: relative;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      position: relative;
+      z-index: 5;
+      transition: 0.3s;
+      .Text {
+        opacity: 0;
+        transition: 0.3s;
+      }
+    }
+    .WrapperImg {
+      height: 100%;
+      width: 100%;
+      // overflow: hidden;
+      img {
+        width: 100%; // Растянуть на ширину контейнера
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .Text {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background: #000;
+      height: 70px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 21px;
+      transition: 0.3s;
+    }
+  }
+}

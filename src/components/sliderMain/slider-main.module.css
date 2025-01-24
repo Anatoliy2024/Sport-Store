@@ -1,0 +1,40 @@
+.Wrapper {
+  /* padding: 25px 0 0 0; */
+  overflow: hidden;
+  /* width: 100%; */
+}
+.Window {
+  /* height: 480px; */
+  /* width: 100%; */
+  /* justify-content: center; */
+}
+.Lenta {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.ImgWrapper {
+  min-width: 1360px;
+  height: 482px;
+  /* height: auto; */
+  /* overflow: hidden; */
+}
+.ImgWrapper img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.face {
+  /* padding: 50px 75px; */
+  margin: 25px 0 50px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .face {
+    /* padding: 50px 75px; */
+    margin: 55px 0 50px 0;
+  }
+}

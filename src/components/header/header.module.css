@@ -1,0 +1,190 @@
+.Delivery {
+  height: 50px;
+  /* padding: 0 160px; */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.DeliveryOption div:first-child {
+  display: flex;
+  gap: 15px;
+}
+
+.ButtonPlace {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.ButtonPlace .Image {
+  display: flex;
+  align-items: center;
+}
+
+.DeliveryOption {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+.DeliveryOption div {
+  cursor: pointer;
+}
+.DeliveryOption div:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  /* background: #282727; */
+}
+
+.OtherOptionDelivery {
+  display: flex;
+  gap: 30px;
+  /* align-items: center; */
+}
+.DeliveryButton {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.Image {
+  width: 24px;
+  height: 24px;
+}
+
+.MainHeader {
+  /* padding: 0 160px; */
+  display: flex;
+  height: 94px;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  flex-wrap: wrap;
+}
+.OptionMain {
+  display: flex;
+  gap: 25px;
+}
+.OptionMainMobile {
+  display: none;
+  gap: 20px;
+}
+.logoMain {
+}
+.OptionMain div {
+  cursor: pointer;
+  height: 25px;
+}
+
+.OptionMain div:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #000;
+}
+.OptionMainSecond {
+  display: flex;
+  gap: 25px;
+}
+.ButtonMainSecond {
+  cursor: pointer;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  height: 40px;
+  border-radius: 10px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.ButtonMainSecond:hover {
+  cursor: pointer;
+  background: #c2bbbb;
+}
+.ButtonMainSecond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerMainOption {
+  background: #f9f9f9;
+  min-height: 60px;
+  display: flex;
+  /* padding: 0 148px; */
+  align-items: center;
+  /* margin: 0 -12px; */
+  flex-wrap: wrap;
+}
+.containerMainOption div {
+  padding: 12px;
+  cursor: pointer;
+}
+.containerMainOption div:hover {
+  border-bottom: 3px solid #000;
+}
+
+@media screen and (max-width: 800px) {
+  .Delivery {
+    display: none;
+  }
+  .visibleNone {
+    display: none;
+  }
+  .ButtonMainSecond span {
+    display: none;
+  }
+  .OptionMain {
+    display: none;
+  }
+  .OptionMainMobile {
+    display: flex;
+  }
+  .MainOptionHeader {
+    display: none;
+  }
+  .MainOptionHeader.showMenu {
+    display: block;
+    min-height: 100vh;
+    background: #000000b4;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    /* overflow: hidden; */
+
+    /* overflow: hidden; */
+  }
+
+  .containerMainOption.showMenu {
+    display: flex;
+    max-width: 50%;
+    max-height: 90vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-items: start; */
+    overflow-y: auto;
+    padding-bottom: 20px;
+
+    /* background: #fff; */
+  }
+
+  .MainHeader {
+    /* padding: 0 20px; */
+    height: 55px;
+    position: fixed;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    width: 100vw;
+    background: #fff;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  .logoMain {
+    width: 150px;
+  }
+}

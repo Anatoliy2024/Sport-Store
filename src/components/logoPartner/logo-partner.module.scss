@@ -1,0 +1,12 @@
+.Container {
+  // padding: 0 160px;
+}
+.Main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  @media (max-width: 800px) {
+    margin-bottom: 40px;
+  }
+}

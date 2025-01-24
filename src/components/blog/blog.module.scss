@@ -1,0 +1,170 @@
+%arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.slider {
+  overflow: hidden;
+  margin-bottom: 50px;
+  // display: flex;
+  // justify-content: center;
+
+  .windowBlog {
+    display: flex;
+    position: relative;
+    transition: all 0.4s ease;
+
+    .blog {
+      display: flex;
+      flex: 1;
+      min-width: 100%;
+      // flex-wrap: wrap;
+
+      @media (max-width: 800px) {
+        display: block;
+      }
+
+      .image,
+      .text {
+        flex: 1; /* Устанавливаем равную ширину для блоков */
+        max-width: 50%; /* Ограничиваем ширину до 50% контейнера */
+        max-height: 550px;
+        @media (max-width: 800px) {
+          max-width: 100%;
+        }
+      }
+
+      .image {
+        // flex: 1;
+        position: relative;
+        color: white;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          max-height: 655px;
+          object-position: top center;
+        }
+        .playButton {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.83);
+          padding: 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: #717171;
+            color: #000;
+          }
+        }
+      }
+      .text {
+        // flex: 1;
+        background: black;
+        color: white;
+        position: relative;
+
+        .wrapper {
+          padding: 50px;
+          @media (max-width: 1282px) {
+            padding: 15px;
+          }
+          .titleInfo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            h3 {
+              font-size: 21px;
+            }
+            div {
+              font-size: 14px;
+              text-decoration: underline;
+              &:hover {
+                cursor: pointer;
+                color: #717171;
+              }
+            }
+          }
+          h2 {
+            font-size: 32px;
+            font-weight: 700;
+            width: 400px;
+            margin-bottom: 40px;
+          }
+          p {
+            font-size: 14px;
+            color: #828282;
+            width: 80%;
+            max-width: 550px;
+            line-height: 25px;
+          }
+          .read {
+            margin-top: 75px;
+            padding-left: 40px;
+            text-decoration: underline;
+            position: relative;
+            display: inline-block;
+            &:hover {
+              cursor: pointer;
+              color: #717171;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: rotateY(-50%);
+              left: -5px;
+              display: inline-block;
+              border-bottom: 1px solid #f2f2f2;
+              width: 30px;
+              // height: 5px;
+            }
+          }
+        }
+      }
+
+      .arrow1 {
+        @extend %arrow;
+        padding-right: 5px;
+
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        background: #3e3e3e7e;
+        border-radius: 50%;
+        &:hover {
+          background: #a9a9a97e;
+        }
+      }
+      .arrow2 {
+        @extend %arrow;
+
+        padding-left: 5px;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #3e3e3e7e;
+        border-radius: 50%;
+        &:hover {
+          background: #a9a9a97e;
+        }
+      }
+    }
+    // .blogActive1 {
+    //   opacity: 1;
+    // }
+    // .blogActive2 {
+    //   opacity: 0;
+    //   //  display: none;
+    //   // opacity: 1;
+    //   // top: 0;
+    // }
+  }
+}

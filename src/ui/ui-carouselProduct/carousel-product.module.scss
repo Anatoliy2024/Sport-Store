@@ -1,0 +1,116 @@
+.slider {
+  min-width: 300px;
+  max-width: 100%;
+  height: 482px;
+  position: relative;
+  overflow: hidden;
+  //не дает выделить текст в слайде
+  user-select: none;
+
+  // margin-bottom: 50px;
+  // touch-action: pan-y;
+  &:hover {
+    cursor: url("/grab.svg"), auto;
+  }
+  &:active {
+    cursor: url("/grabbed.svg"), auto;
+  }
+  .window {
+    height: 100%;
+    // width: 30px;
+    .sliderLine {
+      transition: all 0.4s ease;
+      display: flex;
+
+      height: 100%;
+      width: 100%;
+      margin: 0 -10px;
+      .oneSlide {
+        height: 100%;
+        margin: 0 10px;
+
+        .blockImg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 370px;
+          width: 320px;
+
+          background: #f9f9f9;
+          margin-bottom: 10px;
+          position: relative;
+          img {
+            height: 270px;
+            width: 270px;
+            //не дает перемещать картинку при нажатии мышкой
+            pointer-events: none;
+
+            object-fit: cover;
+          }
+          .star {
+            border-radius: 50%;
+            border: 1px solid black;
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #000;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          .discontInterest {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2px;
+            color: white;
+            background: #eb5757;
+          }
+        }
+        .label {
+          font-weight: 500;
+        }
+        .category {
+          font-size: 14px;
+          color: #828b8d;
+          margin-bottom: 10px;
+        }
+        .priceBlock {
+          display: flex;
+          gap: 15px;
+          .endPrise {
+          }
+          .discount {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+
+  %arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+  .arrow1 {
+    @extend %arrow;
+    left: 15px;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  .arrow2 {
+    @extend %arrow;
+    right: 15px;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+}
