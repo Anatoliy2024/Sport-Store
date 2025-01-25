@@ -37,7 +37,7 @@ export function Blog() {
       >
         <div className={style.blog}>
           <div className={style.image}>
-            <img src="/Rectangle.png" alt="image" />
+            <img src="./Rectangle.png" alt="image" />
             <Play className={style.playButton} />
           </div>
           <div className={style.text}>
@@ -71,7 +71,7 @@ export function Blog() {
         </div>
         <div className={style.blog}>
           <div className={style.image}>
-            <img src="/image33.jpg" alt="image" />
+            <img src="./image33.jpg" alt="image" />
             <Play className={style.playButton} />
             <AiOutlineCaretLeft
               onTouchStart={goLeft}

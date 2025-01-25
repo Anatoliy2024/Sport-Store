@@ -15,40 +15,40 @@ import { Footer } from "./components/footer/footer"
 
 const images = [
   {
-    lowQualitySrc: "/img%20(1).jpg",
-    highQualitySrc: "/img%20(1)%20big.png",
+    lowQualitySrc: "./img%20(1).jpg",
+    highQualitySrc: "./img%20(1)%20big.png",
     text: "Волна",
   },
   {
-    lowQualitySrc: "/img%20(2).jpg",
-    highQualitySrc: "/img%20(2)%20big.png",
+    lowQualitySrc: "./img%20(2).jpg",
+    highQualitySrc: "./img%20(2)%20big.png",
     text: "Сноубордист",
   },
   {
-    lowQualitySrc: "/img%20(3).jpg",
-    highQualitySrc: "/img%20(3)%20big.png",
+    lowQualitySrc: "./img%20(3).jpg",
+    highQualitySrc: "./img%20(3)%20big.png",
     text: "Сноуборд",
   },
   {
-    lowQualitySrc: "/img%20(1).jpg",
-    highQualitySrc: "/img%20(1)%20big.png",
+    lowQualitySrc: "./img%20(1).jpg",
+    highQualitySrc: "./img%20(1)%20big.png",
     text: "Волна",
   },
   {
-    lowQualitySrc: "/img%20(2).jpg",
-    highQualitySrc: "/img%20(2)%20big.png",
+    lowQualitySrc: "./img%20(2).jpg",
+    highQualitySrc: "./img%20(2)%20big.png",
     text: "Сноубордист",
   },
   {
-    lowQualitySrc: "/img%20(3).jpg",
-    highQualitySrc: "/img%20(3)%20big.png",
+    lowQualitySrc: "./img%20(3).jpg",
+    highQualitySrc: "./img%20(3)%20big.png",
     text: "Сноуборд",
   },
 ]
 
 const product = [
   {
-    img: "/image%209.png",
+    img: "./image%209.png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -57,7 +57,7 @@ const product = [
     star: false,
   },
   {
-    img: "/image%209%20(1).png",
+    img: "./image%209%20(1).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 50,
@@ -66,7 +66,7 @@ const product = [
     star: true,
   },
   {
-    img: "/image%209%20(2).png",
+    img: "./image%209%20(2).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -75,7 +75,7 @@ const product = [
     star: false,
   },
   {
-    img: "/image%209%20(3).png",
+    img: "./image%209%20(3).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -84,7 +84,7 @@ const product = [
     star: false,
   },
   {
-    img: "/image%209.png",
+    img: "./image%209.png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -93,7 +93,7 @@ const product = [
     star: false,
   },
   {
-    img: "/image%209%20(1).png",
+    img: "./image%209%20(1).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 50,
@@ -102,7 +102,7 @@ const product = [
     star: false,
   },
   {
-    img: "/image%209%20(2).png",
+    img: "./image%209%20(2).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -111,7 +111,7 @@ const product = [
     star: false,
   },
   {
-    img: "/image%209%20(3).png",
+    img: "./image%209%20(3).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -122,7 +122,7 @@ const product = [
 ]
 const product2 = [
   {
-    img: "/image%209%20(3).png",
+    img: "./image%209%20(3).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -131,7 +131,7 @@ const product2 = [
     star: true,
   },
   {
-    img: "/boots.png",
+    img: "./boots.png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 50,
@@ -140,7 +140,7 @@ const product2 = [
     star: true,
   },
   {
-    img: "/image%209%20(2).png",
+    img: "./image%209%20(2).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -150,7 +150,7 @@ const product2 = [
   },
 
   {
-    img: "/image%209.png",
+    img: "./image%209.png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -159,7 +159,7 @@ const product2 = [
     star: false,
   },
   {
-    img: "/image%209%20(2).png",
+    img: "./image%209%20(2).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -168,7 +168,7 @@ const product2 = [
     star: false,
   },
   {
-    img: "/image%209%20(3).png",
+    img: "./image%209%20(3).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 0,
@@ -177,7 +177,7 @@ const product2 = [
     star: false,
   },
   {
-    img: "/boots.png",
+    img: "./boots.png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 50,
@@ -186,7 +186,7 @@ const product2 = [
     star: true,
   },
   {
-    img: "/image%209%20(1).png",
+    img: "./image%209%20(1).png",
     label: "LIB TECH",
     category: "Мужской Сноуборд",
     discount: 50,

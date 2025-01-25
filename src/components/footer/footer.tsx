@@ -3,12 +3,12 @@ export function Footer() {
   return (
     <>
       <div>
-        <img src="/footer/Rectangle.png" alt="image" />
+        <img src="./footer/Rectangle.png" alt="image" />
       </div>
       <div className={style.wrapper}>
         <div className={style.title}>
           <div className={style.logo}>
-            <img src="/footer/image%2027.png" alt="" />
+            <img src="./footer/image%2027.png" alt="img" />
             <div>boardriders</div>
           </div>
           <div className={style.input}>
@@ -16,9 +16,9 @@ export function Footer() {
               type="text"
               placeholder="Подпишись на рассылку и получи  -10%  скидку"
             />
-            <img src="/footer/Vector.png" alt="" />
+            <img src="./footer/Vector.png" alt="" />
             <button>
-              <img src="/footer/Vector%20(1).png" alt="" />
+              <img src="./footer/Vector%20(1).png" alt="img" />
             </button>
           </div>
         </div>
@@ -30,14 +30,14 @@ export function Footer() {
             <div className={style.mobilContent}>
               <div className={style.mobilWrapper}>
                 <div className={style.mobilStore}>
-                  <img src="/footer/Group%2042.png" alt="logo" />
+                  <img src="./footer/Group%2042.png" alt="logo" />
                   <div className={style.mobilStoreText}>
                     <div>Download on the</div>
                     <div>App Store</div>
                   </div>
                 </div>
                 <div className={style.mobilStore}>
-                  <img src="/footer/Group%201030.png" alt="" />
+                  <img src="./footer/Group%201030.png" alt="img" />
                   <div className={style.mobilStoreText}>
                     <div>Get it on</div>
                     <div>Google Play</div>
@@ -45,7 +45,7 @@ export function Footer() {
                 </div>
               </div>
               <div>
-                <img src="/footer/Group%201035.png" alt="" />
+                <img src="./footer/Group%201035.png" alt="img" />
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export function Footer() {
             <div className={style.textContainer}>
               <div className={style.phonNumber}>
                 <div>
-                  <img src="/footer/Vector%20(2).png" alt="" />
+                  <img src="./footer/Vector%20(2).png" alt="img" />
                 </div>
                 <div className={style.contactText}>
                   <div>8 (800) 511-74-68</div>
@@ -66,7 +66,7 @@ export function Footer() {
               </div>
               <div className={style.email}>
                 <div>
-                  <img src="/footer/Vector%20(3).png" alt="" />
+                  <img src="./footer/Vector%20(3).png" alt="img" />
                 </div>
                 <div className={style.contactText}>
                   <div>Контактный Email</div>
@@ -137,30 +137,33 @@ export function Footer() {
           <ul className={style.socialMedia}>
             <li>
               <a href="#">
-                <img src="/footer/twitter%20-%20FontAwesome.png" alt="" />
+                <img src="./footer/twitter%20-%20FontAwesome.png" alt="img" />
               </a>
             </li>
             <li>
               <a href="#">
                 <img
-                  src="/footer/facebook-official%20-%20FontAwesome.png"
-                  alt=""
+                  src="./footer/facebook-official%20-%20FontAwesome.png"
+                  alt="img"
                 />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/footer/twitch%20-%20FontAwesome.png" alt="" />
+                <img src="./footer/twitch%20-%20FontAwesome.png" alt="img" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/footer/youtube-play%20-%20FontAwesome.png" alt="" />
+                <img
+                  src="./footer/youtube-play%20-%20FontAwesome.png"
+                  alt="img"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/footer/instagram%20-%20FontAwesome.png" alt="" />
+                <img src="./footer/instagram%20-%20FontAwesome.png" alt="img" />
               </a>
             </li>
           </ul>

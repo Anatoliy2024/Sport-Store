@@ -4,7 +4,7 @@ import style from "./carousel-product.module.scss"
 // import { Images } from "../../components/sliderMain/slider-main"
 import { NewBoard } from "../../components/newBoard/new-board"
 import { ArrowLeft } from "../../svg/arrowLeft"
-import { ArrowRight } from "../../svg/ArrowRight"
+import { ArrowRight } from "../../svg/arrowRight"
 import { Star } from "../../svg/star"
 //ширина каждого элемента слайда
 const WIDTH_DIV = 321

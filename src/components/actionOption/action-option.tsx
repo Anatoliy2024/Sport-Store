@@ -3,7 +3,7 @@ export function ActionOption() {
   return (
     <div className={style.wrapper}>
       <div>
-        <img src="/Rectangle%2019.png" alt="img" />
+        <img src="./Rectangle%2019.png" alt="img" />
       </div>
       <h3>Название Акции</h3>
       <div className={style.text}>
