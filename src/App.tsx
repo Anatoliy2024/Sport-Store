@@ -207,7 +207,7 @@ function App() {
         <HeaderTop />
       </div>
       <div className={style.Section}>
-        <HeaderMain setShowMenu={setShowMenu} />
+        <HeaderMain setShowMenu={setShowMenu} showMenu={showMenu} />
       </div>
       <div className={`${style.Section} ${style.HeaderGrey}`}>
         <HeaderBot showMenu={showMenu} setShowMenu={setShowMenu} />

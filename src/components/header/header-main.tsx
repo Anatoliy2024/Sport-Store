@@ -1,7 +1,9 @@
 import style from "./header.module.css"
 export function HeaderMain({
+  showMenu,
   setShowMenu,
 }: {
+  showMenu: boolean
   setShowMenu: React.Dispatch<React.SetStateAction<boolean>>
 }) {
   return (
@@ -16,8 +18,10 @@ export function HeaderMain({
           onClick={() => {
             setShowMenu((prev) => !prev)
           }}
+          className={`${style.BurgerMenu} ${showMenu ? style.Active : ""}`}
         >
-          <img src="./Group%2020.png" alt="img" />
+          <span></span>
+          {/* <img src="./Group%2020.png" alt="img" /> */}
         </div>
         <div>
           <img src="./Vector222.png" alt="img" />

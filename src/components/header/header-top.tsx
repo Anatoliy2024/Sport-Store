@@ -13,9 +13,9 @@ export function HeaderTop() {
             <img src="./image/arrow.png" alt="arrow" />
           </div>
         </div>
-        <div>Магазин</div>
-        <div>Помощь</div>
-        <div>Блоги</div>
+        <div className={style.DeliveryOptionButton}>Магазин</div>
+        <div className={style.DeliveryOptionButton}>Помощь</div>
+        <div className={style.DeliveryOptionButton}>Блоги</div>
       </div>
       <div className={style.OtherOptionDelivery}>
         <div className={style.DeliveryButton}>

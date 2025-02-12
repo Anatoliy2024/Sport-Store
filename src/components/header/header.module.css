@@ -32,7 +32,7 @@
 .DeliveryOption div {
   cursor: pointer;
 }
-.DeliveryOption div:hover {
+.DeliveryOptionButton:hover {
   cursor: pointer;
   border-bottom: 2px solid #fff;
   /* background: #282727; */
@@ -71,6 +71,50 @@
   display: none;
   gap: 20px;
 }
+.BurgerMenu {
+  display: block;
+  z-index: 5;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.BurgerMenu span,
+.BurgerMenu::before,
+.BurgerMenu::after {
+  position: absolute;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  background-color: #000;
+}
+.BurgerMenu::before,
+.BurgerMenu::after {
+  content: "";
+}
+.BurgerMenu::before {
+  top: 0;
+}
+.BurgerMenu::after {
+  bottom: 0;
+}
+.BurgerMenu span {
+  top: 50%;
+  transform: scale(1) translate(0, -50%);
+}
+.BurgerMenu.Active span {
+  transform: scale(0) translate(0, -50%);
+}
+.BurgerMenu.Active:before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.BurgerMenu.Active:after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
 .logoMain {
 }
 .OptionMain div {
